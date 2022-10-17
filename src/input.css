@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './style/navbar.css'
+
+@layer base {
+    html{
+    @apply font-sans  
+    }
+
+h1{
+    @apply text-2xl ;
+
+}
+}
+
+@layer components{
+.navbar{
+    @apply flex justify-between my-10 px-20 pb-4 border-b-2      
+}
+.navbar h1{
+    @apply text-primary font-semibold text-3xl
+}
+.navbar h1 span{
+    @apply text-primary-variant
+}
+.navbar ul {
+    @apply  flex align-middle gap-8 text-primary
+}
+.navbar ul li { 
+    @apply inline font-medium
+}
+
+.hero {
+    @apply flex px-20 
+}
+
+.hero .left-text{
+    @apply flex-40 pr-40
+}
+.hero .left-text h1{
+    @apply text-5xl text-primary-variant font-bold pt-5
+}
+.hero .left-text p{
+    @apply pt-5 pr-20 text-secondary leading-6
+}
+.hero .right-picture{
+    @apply flex-60 
+}
+/* 
+.hero .right-picure img{
+    @apply z-0  
+} */
+.hero .right-picture .box-layer-picture{
+    @apply border-2  rounded-tl-[100px] -z-10 mt-100
+}
+
+.btn {
+    @apply mt-10 px-20 py-4 rounded-md
+}
+.btn-primary{
+    @apply bg-primary text-white
+}
+}
