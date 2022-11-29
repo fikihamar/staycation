@@ -1,22 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './style/navbar.css'
+@import './style/navbar.css';
 
 @layer base {
     html{
-    @apply font-sans  
+    @apply font-sans text-primary
+    }
+    body{
+        @apply mx-36
     }
 
 h1{
-    @apply text-2xl ;
+    @apply text-2xl 
 
 }
 }
 
 @layer components{
 .navbar{
-    @apply flex justify-between my-10 px-20 pb-4 border-b-2      
+    @apply flex justify-between my-10 mx-0 pb-4 border-b-2 !important
 }
 .navbar h1{
     @apply text-primary font-semibold text-3xl
@@ -32,33 +35,83 @@ h1{
 }
 
 .hero {
-    @apply flex px-20 
+    @apply flex
 }
 
-.hero .left-text{
-    @apply flex-40 pr-40
+.hero .left-hero{
+    @apply flex-40 pr-40 justify-between 
 }
-.hero .left-text h1{
+.hero .left-hero h1{
     @apply text-5xl text-primary-variant font-bold pt-5
 }
-.hero .left-text p{
+.hero .left-hero p{
     @apply pt-5 pr-20 text-secondary leading-6
 }
+.hero .left-hero .icon{
+    @apply mt-10 flex justify-between
+}
+.hero .left-hero .icon .icon-item{
+    @apply  justify-center 
+}
+
 .hero .right-picture{
-    @apply flex-60 
+    @apply flex-60 relative
 }
 /* 
 .hero .right-picure img{
     @apply z-0  
 } */
 .hero .right-picture .box-layer-picture{
-    @apply border-2  rounded-tl-[100px] -z-10 mt-100
+    @apply border-2 rounded-tl-[100px] rounded-[20px] mt-10 ml-10 min-w-full min-h-full -z-10 absolute
+}
+.hero .right-picture img{
+    @apply rounded-tl-[100px] rounded-[5px]
 }
 
+.most-picked{
+    @apply mt-40
+}
+.most-picked .card-group{
+    @apply grid grid-cols-3 gap-[30px] flex-60
+}
+.most-picked .card{
+    @apply mt-5 z-10 relative text-white h-[215px]
+}
+.most-picked .card img{
+    @apply -z-20 absolute rounded-xl w-full h-full object-cover
+}
+.most-picked .card .layer{
+    @apply -z-10 absolute w-full h-full rounded-xl bg-gradient-to-t from-black opacity-70 
+}
+.most-picked .card .price{
+    @apply absolute bg-green-600 right-0 p-3 rounded-bl-xl rounded-tr-xl
+}
+.most-picked .card span{
+    @apply absolute bottom-0 pl-6 pb-7
+}
+.most-picked .card .hotel-name{
+    @apply font-medium bottom-7
+}
+.most-picked .card .hotel-address{
+    @apply font-light 
+}
+.most-picked .card-parent{
+    @apply flex gap-10
+}
+.most-picked .card-big{
+    @apply w-[360px] h-[500px] 
+}
+
+/* .most-picked .card ca{
+    @apply mt-5 grid grid-rows-3 w-40
+} */
+
+/* utility */
 .btn {
     @apply mt-10 px-20 py-4 rounded-md
 }
 .btn-primary{
     @apply bg-primary text-white
 }
+
 }

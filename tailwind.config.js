@@ -3,11 +3,11 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-    colors: {
-      'primary-variant': '#152C5B',
-      'primary': '#2B4CDC',
-      'secondary': '#7B7B7B'
-    },
+      colors: {
+        'primary-variant': '#152C5B',
+        'primary': '#2B4CDC',
+        'secondary': '#7B7B7B'
+      }
     },
     fontFamily: {
       sans: ['Poppins', 'sans-serif'],
