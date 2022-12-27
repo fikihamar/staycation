@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/scss/style.css">
 </head>
+<script src="../../../../../node_modules/flowbite/dist/flowbite.js"></script>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar flex justify-between my-10 mx-0 pb-4 border-b-2">
         <h1>Stay<span>cation.</span></h1>
         <ul>
             <li><a href="">Home</a></li>
@@ -28,16 +30,16 @@
             <p>Staycation will give you a different holiday experience, with the concept of staying in a tourist area
                 and enjoying your vacation</p>
             <button type="button" class="btn btn-primary">Go Now</button>
-            <div class="icon">
-                <div class="icon-item">
+            <div class="grid grid-cols-3 mt-10">
+                <div class="icon">
                     <img src="./asset/logo/ic_traveller.svg" alt="">
                     <span>80,657 travellers</span>
                 </div>
-                <div class="icon-item">
+                <div class="icon">
                     <img src="./asset/logo/ic_cities.svg" alt="">
                     <span>80,450 Cities</span>
                 </div>
-                <div class="icon-item">
+                <div class="icon">
                     <img src="./asset/logo/ic_destinations.svg" alt="">
                     <span>120,365 Destinations</span>
                 </div>
@@ -46,16 +48,16 @@
         <div class="right-picture">
             <div class="box-layer-picture">
             </div>
-            <img src="./img/person.jpg" width="100%">
+            <img src="./img/visualsofdana-T5pL6ciEn-I-unsplash.jpg" width="100%">
         </div>
     </section>
     <section class="most-picked">
-        <h1>Most Picked</h1>
+        <h3>Most Picked</h3>
         <div class="card-parent">
             <div class="card card-big">
                 <div class="layer"></div>
-                <div class="price">IDR 200.000/night</div>
-                <img src="./img/sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="">
+                <div class="price">IDR 11.243.500/night</div>
+                <img src="./img/kelsey-curtis--27u_GzlAFw-unsplash.jpg" alt="">
                 <span class="hotel-name">The Heritage
                     Solo</span>
                 <span class="hotel-address">Solo, Indonesia</span>
@@ -63,76 +65,151 @@
             <div class="card-group">
                 <div class="card">
                     <div class="layer"></div>
-                    <div class="price">IDR 200.000/night</div>
-                    <img src="./img/sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="">
-                    <span class="hotel-name">The Heritage
-                        Solo</span>
-                    <span class="hotel-address">Solo, Indonesia</span>
+                    <div class="price">IDR 9.179.000/night</div>
+                    <img src="./img/edvin-johansson-rlwE8f8anOc-unsplash.jpg" alt="">
+                    <span class="hotel-name">The Samaya Ubud</span>
+                    <span class="hotel-address">Bali, Indonesia</span>
                 </div>
                 <div class="card">
                     <div class="layer"></div>
-                    <div class="price">IDR 200.000/night</div>
-                    <img src="./img/sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="">
-                    <span class="hotel-name">The Heritage Solo</span>
-                    <span class="hotel-address">Solo, Indonesia</span>
+                    <div class="price">IDR 3.759.280/night</div>
+                    <img src="./img/francesca-saraco-_dS27XGgRyQ-unsplash.jpg" alt="">
+                    <span class="hotel-name">Berry Amour Romantic Villas</span>
+                    <span class="hotel-address">Milan, Italia</span>
                 </div>
                 <div class="card">
                     <div class="layer"></div>
-                    <div class="price">IDR 200.000/night</div>
+                    <div class="price">IDR 3.600.000/night</div>
                     <img src="./img/sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="">
-                    <span class="hotel-name">The Heritage Solo</span>
-                    <span class="hotel-address">Solo, Indonesia</span>
+                    <span class="hotel-name">Maca Villas and Spa Umalas</span>
+                    <span class="hotel-address">Bali, Indonesia</span>
                 </div>
                 <div class="card">
                     <div class="layer"></div>
-                    <div class="price">IDR 200.000/night</div>
-                    <img src="./img/sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="">
-                    <span class="hotel-name">The Heritage Solo</span>
-                    <span class="hotel-address">Solo, Indonesia</span>
+                    <div class="price">IDR 2.388.572/night</div>
+                    <img src="./img/ralph-ravi-kayden-FqqiAvJejto-unsplash.jpg" alt="">
+                    <span class="hotel-name">The Sterling Hotel and Villas</span>
+                    <span class="hotel-address">Munich, Germany</span>
                 </div>
+                <div class="card">
+                    <div class="layer"></div>
+                    <div class="price">IDR 1.686.747/night</div>
+                    <img src="./img/39c0acf9-d24d-488d-afff-58c9819b438b-1604155311321-a5cc492137733a9fe2351dc1a279239c.webp"
+                        alt="">
+                    <span class="hotel-name">Bajra Bali Villa Seminyak</span>
+                    <span class="hotel-address">Bali, Indonesia</span>
+                </div>
+                <div class="card">
+                    <div class="layer"></div>
+                    <div class="price">IDR 1.021.698/night</div>
+                    <img src="./img/6083ea34-4114-483a-93ad-101ac5e57a3b-1615551740908-40657741bae84473d31caf635ab77e3f.webp"
+                        alt="">
+                    <span class="hotel-name">Paisa Seminyak Living Villa</span>
+                    <span class="hotel-address">Bali, Indonesia</span>
+                </div>
+
             </div>
         </div>
-
-
     </section>
 
-    <section class="most-picked">
-        <h1>House With Backyard</h1>
+    <section class="house">
+        <h3>International Choice</h3>
         <div class="card-group">
             <div class="card">
-                <div class="layer"></div>
-                <div class="price">IDR 200.000/night</div>
-                <img src="./img/sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="">
+                <div class="card-image">
+                    <div class="layer"></div>
+                    <div class="price">Popular Choice</div>
+                    <img src="./img/saad-khan-425b2PhNuHA-unsplash.jpg" alt="">
+                </div>
+                <span class="hotel-name">La Vie Villa</span>
+                <span class="hotel-address">Madrid, Spain</span>
+            </div>
+            <a href="./details.html">
+                <div class="card">
+                    <div class="card-image">
+                        <div class="layer"></div>
+                        <img src="./img/vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg" alt="">
+                    </div>
+                    <span class="hotel-name">Khayangan Kemenuh by Premier Hospitality Asia</span>
+                    <span class="hotel-address">Bangkok, Thailand</span>
+                </div>
+            </a>
+            <div class="card">
+                <div class="card-image">
+                    <div class="layer"></div>
+                    <img src="./img/0cbacb07-1369-4eac-a8cd-67f56a04494d-1603885212559-78723b4fe9509d68e87035e0b2d8caeb.webp"
+                        alt="">
+                </div>
+                <span class="hotel-name">The Jas Villas</span>
+                <span class="hotel-address">Paris, France</span>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <div class="layer"></div>
+                    <img src="./img/4a657d03-6832-42c8-966c-aa337790315f-1615552627483-b0195bdf3a14d722ee0a204529af7a70.webp"
+                        alt="">
+                </div>
                 <span class="hotel-name">The Heritage
                     Solo</span>
                 <span class="hotel-address">Solo, Indonesia</span>
             </div>
-            <div class="card">
-                <div class="layer"></div>
-                <div class="price">IDR 200.000/night</div>
-                <img src="./img/sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="">
-                <span class="hotel-name">The Heritage Solo</span>
-                <span class="hotel-address">Solo, Indonesia</span>
-            </div>
-            <div class="card">
-                <div class="layer"></div>
-                <div class="price">IDR 200.000/night</div>
-                <img src="./img/sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="">
-                <span class="hotel-name">The Heritage Solo</span>
-                <span class="hotel-address">Solo, Indonesia</span>
-            </div>
-            <div class="card">
-                <div class="layer"></div>
-                <div class="price">IDR 200.000/night</div>
-                <img src="./img/sasha-kaunas-xEaAoizNFV8-unsplash.jpg" alt="">
-                <span class="hotel-name">The Heritage Solo</span>
-                <span class="hotel-address">Solo, Indonesia</span>
-            </div>
         </div>
 
 
     </section>
 
+    <section class="testimony">
+        <div class="testimony-image">
+            <div class="image">
+                <img src="./img/picture.png" alt="">
+            </div>
+        </div>
+        <div class="testimony-text">
+            <h1>Happy Family</h1>
+            <div class="icon-star"><img src="./icon/ic_star 1.png" alt="" srcset=""><img src="./icon/ic_star 1.png"
+                    alt="" srcset=""><img src="./icon/ic_star 1.png" alt="" srcset=""><img src="./icon/ic_star 1.png"
+                    alt="" srcset=""></div>
+            <span class="testimony-comment">Great exprience i get with staycation, <br> I Will use Staycation for my
+                next
+                years
+                vacation</span>
+            <span class="testimony-client">Fikih Amar, Vice President Boston Consulting Group</span>
+            <button class="btn btn-primary">Go Now</button>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="logo">
+            <h1>Stay<span>cation.</span></h1>
+            <span>We serve sincerely and without limits</span>
+        </div>
+        <div class="menu">
+            <h3 class="menu-title">For Beginners</h3>
+            <ul class="menu-links">
+                <li><a href=""><span>New Account</span></a></li>
+                <li><a href=""><span>Payment Method</span></a></li>
+                <li><a href=""><span>Book Now</span></a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h3 class="menu-title">Explore Us</h3>
+            <ul class="menu-links">
+                <li><a href=""><span>About</span></a></li>
+                <li><a href=""><span>Privacy Policy</span></a></li>
+                <li><a href=""><span>Terms & Condition</span></a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h3 class="menu-title">Contact</h3>
+            <ul class="menu-links">
+                <li><a href=""><span>costumer@staycation.id</span></a></li>
+                <li><a href=""><span>021-87378913</span></a></li>
+                <li><a href=""><span>Sudirman, Central Jakarta, Indonesia</span></a></li>
+            </ul>
+        </div>
+
+    </footer>
 
 </body>
 

@@ -11,9 +11,24 @@
         @apply mx-36
     }
 
+h1, h2, h3, h4, h5{
+    @apply text-primary-variant font-medium
+}
 h1{
-    @apply text-2xl 
+    @apply text-4xl
+}
+h2{
+    @apply text-3xl
+}
+h3{
+    @apply text-2xl
+}
 
+p,span{
+    @apply text-secondary-variant
+}
+footer{
+    @apply grid grid-cols-4 mt-40 mb-20 font-medium
 }
 }
 
@@ -28,44 +43,34 @@ h1{
     @apply text-primary-variant
 }
 .navbar ul {
-    @apply  flex align-middle gap-8 text-primary
+    @apply   text-primary hidden md:flex align-middle gap-8
 }
 .navbar ul li { 
     @apply inline font-medium
 }
 
 .hero {
-    @apply flex
+    @apply flex flex-col gap-20 2xl:flex-row
 }
 
 .hero .left-hero{
-    @apply flex-40 pr-40 justify-between 
+    @apply  pr-20 justify-between 2xl:flex-40 
 }
 .hero .left-hero h1{
     @apply text-5xl text-primary-variant font-bold pt-5
 }
 .hero .left-hero p{
-    @apply pt-5 pr-20 text-secondary leading-6
-}
-.hero .left-hero .icon{
-    @apply mt-10 flex justify-between
-}
-.hero .left-hero .icon .icon-item{
-    @apply  justify-center 
+    @apply pt-5 pr-20 text-secondary-variant leading-8
 }
 
 .hero .right-picture{
-    @apply flex-60 relative
+    @apply  relative flex-60 
 }
-/* 
-.hero .right-picure img{
-    @apply z-0  
-} */
-.hero .right-picture .box-layer-picture{
+.hero .right-picture .box-layer-picture{    
     @apply border-2 rounded-tl-[100px] rounded-[20px] mt-10 ml-10 min-w-full min-h-full -z-10 absolute
 }
 .hero .right-picture img{
-    @apply rounded-tl-[100px] rounded-[5px]
+    @apply rounded-tl-[100px] rounded-[5px] min-w-full min-h-full object-cover
 }
 
 .most-picked{
@@ -84,16 +89,16 @@ h1{
     @apply -z-10 absolute w-full h-full rounded-xl bg-gradient-to-t from-black opacity-70 
 }
 .most-picked .card .price{
-    @apply absolute bg-green-600 right-0 p-3 rounded-bl-xl rounded-tr-xl
+    @apply absolute bg-cyan right-0 p-3 rounded-bl-xl rounded-tr-xl
 }
 .most-picked .card span{
     @apply absolute bottom-0 pl-6 pb-7
 }
 .most-picked .card .hotel-name{
-    @apply font-medium bottom-7
+    @apply font-medium bottom-7 text-white
 }
 .most-picked .card .hotel-address{
-    @apply font-light 
+    @apply font-light text-white
 }
 .most-picked .card-parent{
     @apply flex gap-10
@@ -102,16 +107,102 @@ h1{
     @apply w-[360px] h-[500px] 
 }
 
-/* .most-picked .card ca{
-    @apply mt-5 grid grid-rows-3 w-40
-} */
+.house {
+    @apply mt-20
+}
+.house .card-group{
+    @apply grid grid-cols-4 gap-7
+}
+.house .card{
+    @apply mt-5 text-primary-variant
+}
+.house .card span{
+    @apply block 
+}
+.house .card .hotel-name{
+    @apply font-medium bottom-7 text-xl pt-3 text-primary-variant
+}
+.house .card .hotel-address{
+    @apply font-light text-secondary-variant
+}
+.house .card .card-image{
+    @apply relative z-10 h-[215px] text-white
+}
+.house .card .card-image.layer{
+    @apply -z-10 absolute w-full h-full rounded-xl bg-gradient-to-t from-black opacity-70 
+}
+.house .card .card-image .price{
+    @apply absolute bg-cyan right-0 p-3 rounded-bl-xl rounded-tr-xl
+}
+.house .card .card-image img{
+    @apply -z-20 absolute rounded-xl w-full h-full object-cover
+}
+
+.testimony {
+    @apply mt-10 grid grid-cols-3 gap-4 
+}
+.testimony .testimony-image .image{
+    @apply border-2 w-[364.93px] h-[462px] z-10 relative rounded-lg rounded-br-[100px]
+}
+.testimony .testimony-image .image img{
+    @apply  object-cover h-full -z-10 absolute top-8 left-8 rounded-lg rounded-br-[100px]
+}
+.testimony .testimony-text{
+    @apply col-span-2 flex flex-col justify-center text-[#152C5B] gap-7
+}
+.testimony .testimony-text h1{ 
+    @apply text-4xl font-medium
+}
+.testimony .testimony-text .icon-star{
+    @apply flex
+}
+.testimony .testimony-text .icon-star img{
+    @apply w-[55px] h-[50px]
+}
+.testimony .testimony-text .testimony-comment{
+    @apply text-2xl 
+}
+.testimony .testimony-text .testimony-client{
+    @apply text-secondary-variant text-lg
+}
+.testimony .testimony-text .btn{
+    @apply w-[231px] h-[50px]
+}
+
+.footer .logo h1{
+    @apply text-2xl text-primary align-top
+}
+.footer .logo h1 span{
+    @apply text-primary-variant text-2xl
+}
+.footer .logo span{
+    @apply text-sm text-secondary-variant
+}
+.footer .menu .menu-title{
+    @apply text-lg text-primary-variant 
+}
+.footer .menu .menu-links{
+    @apply text-sm text-secondary-variant mt-2
+}
 
 /* utility */
+.card{
+    @apply cursor-pointer duration-75
+}
+
+.card:hover{
+    @apply scale-105
+}
+
 .btn {
     @apply mt-10 px-20 py-4 rounded-md
 }
 .btn-primary{
     @apply bg-primary text-white
 }
+.icon{
+    @apply flex flex-wrap flex-col items-start
+}
 
 }
+
