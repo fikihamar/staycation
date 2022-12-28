@@ -79,27 +79,6 @@ footer{
 .most-picked .card-group{
     @apply grid grid-cols-3 gap-[30px] flex-60
 }
-.most-picked .card{
-    @apply mt-5 z-10 relative text-white h-[215px]
-}
-.most-picked .card img{
-    @apply -z-20 absolute rounded-xl w-full h-full object-cover
-}
-.most-picked .card .layer{
-    @apply -z-10 absolute w-full h-full rounded-xl bg-gradient-to-t from-black opacity-70 
-}
-.most-picked .card .price{
-    @apply absolute bg-cyan right-0 p-3 rounded-bl-xl rounded-tr-xl
-}
-.most-picked .card span{
-    @apply absolute bottom-0 pl-6 pb-7
-}
-.most-picked .card .hotel-name{
-    @apply font-medium bottom-7 text-white
-}
-.most-picked .card .hotel-address{
-    @apply font-light text-white
-}
 .most-picked .card-parent{
     @apply flex gap-10
 }
@@ -112,30 +91,6 @@ footer{
 }
 .house .card-group{
     @apply grid grid-cols-4 gap-7
-}
-.house .card{
-    @apply mt-5 text-primary-variant
-}
-.house .card span{
-    @apply block 
-}
-.house .card .hotel-name{
-    @apply font-medium bottom-7 text-xl pt-3 text-primary-variant
-}
-.house .card .hotel-address{
-    @apply font-light text-secondary-variant
-}
-.house .card .card-image{
-    @apply relative z-10 h-[215px] text-white
-}
-.house .card .card-image.layer{
-    @apply -z-10 absolute w-full h-full rounded-xl bg-gradient-to-t from-black opacity-70 
-}
-.house .card .card-image .price{
-    @apply absolute bg-cyan right-0 p-3 rounded-bl-xl rounded-tr-xl
-}
-.house .card .card-image img{
-    @apply -z-20 absolute rounded-xl w-full h-full object-cover
 }
 
 .testimony {
@@ -186,11 +141,58 @@ footer{
 }
 
 /* utility */
-.card{
+.card-inside{
+    @apply mt-5 z-10 relative text-white h-[215px]
+}
+.card-inside img{
+    @apply -z-20 absolute rounded-xl w-full h-full object-cover
+}
+.card-inside .layer{
+    @apply -z-10 absolute w-full h-full rounded-xl bg-gradient-to-t from-black opacity-70 
+}
+.card-inside .price{
+    @apply absolute bg-cyan right-0 p-3 rounded-bl-xl rounded-tr-xl
+}
+.card-inside span{
+    @apply absolute bottom-0 pl-6 pb-7
+}
+.card-inside .hotel-name{
+    @apply font-medium bottom-7 text-white
+}
+.card-inside .hotel-address{
+    @apply font-light text-white
+}
+
+.card-outside{
+    @apply mt-5 text-primary-variant
+}
+.card-outside span{
+    @apply block 
+}
+.card-outside .hotel-name{
+    @apply font-medium bottom-7 text-xl pt-3 text-primary-variant
+}
+.card-outside .hotel-address{
+    @apply font-light text-secondary-variant
+}
+.card-outside .card-image{
+    @apply relative z-10 h-[215px] text-white
+}
+.card-outside .card-image.layer{
+    @apply -z-10 absolute w-full h-full rounded-xl bg-gradient-to-t from-black opacity-70 
+}
+.card-outside .card-image .price{
+    @apply absolute bg-cyan right-0 p-3 rounded-bl-xl rounded-tr-xl
+}
+.card-outside .card-image img{
+    @apply -z-20 absolute rounded-xl w-full h-full object-cover
+}
+
+.cardp-inside, .card-outside{
     @apply cursor-pointer duration-75
 }
 
-.card:hover{
+.card-inside:hover, .card-outside:hover{
     @apply scale-105
 }
 
@@ -199,6 +201,9 @@ footer{
 }
 .btn-primary{
     @apply bg-primary text-white
+}
+.btn-secondary{
+    @apply bg-grey text-secondary-variant
 }
 .icon{
     @apply flex flex-wrap flex-col items-start

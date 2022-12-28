@@ -19,6 +19,9 @@ module.exports = {
         '60': '60%',
         '50': '50%',
         '40': '40%'
+      },
+      margin: {
+        '50auto': '50% auto'
       }
     },
     fontFamily: {

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/scss/style.css">
+</head>
+<script src="../../../../../node_modules/flowbite/dist/flowbite.js"></script>
+
+<body>
+    <nav class="flex justify-center my-10 mx-0 pb-4 border-b-2">
+        <h1 class="text-primary">Stay<span class="text-primary-variant">cation.</span></h1>
+    </nav>
+    <section>
+        <div class="table m-auto text-secondary">
+            <div class="table-cell align-middle bg-cyan w-12 h-12 rounded-full  text-white">
+                <svg class="m-auto w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div><svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M23 12H1"></path>
+            </svg>
+            <div class="table-cell align-middle border-2 w-12 h-12 rounded-full">
+                <div class="m-auto leading-10 bg-secondary w-10 h-10 rounded-full text-center text-secondary-variant">
+                    2 </div>
+            </div>
+            <svg class="w-12 h-12 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M23 12H1"></path>
+            </svg>
+
+            <div class="table-cell align-middle bg-secondary w-12 h-12 rounded-full text-center text-secondary-variant">
+                3
+            </div>
+
+        </div>
+        <div class="text-center mt-16 leading-10">
+            <h1>Booking Information</h1>
+            <span>Please fill up the blank field now</span>
+        </div>
+        <div class="grid grid-cols-2 mt-14">
+            <div class="flex justify-center items-start border-r-2 h-[650px] flex-col">
+                <h4>Silahkan Lakukan Pembayaran Melalui Transfer Ke Rekening Berikut</h4>
+                <div class="w-80 flex mt-10 ">
+                    <img src="./asset/logo/jago.png" alt="" class="w-4/12 object-contain">
+                    <span class="w-8/12 font-medium ml-3">Bank Syariah Indonesia
+                        1230237938 <br>
+                        James Ricardo</span>
+                </div>
+                <div class="w-80 flex mt-10 ">
+                    <img src="./asset/logo/bsi.png" alt="" class="w-4/12 object-contain">
+                    <span class="w-8/12 font-medium ml-3">Bank Syariah Indonesia
+                        91232734299 <br>
+                        James Ricardo</span>
+                </div>
+                <table class="text-secondary-variant mt-5">
+                    <tr>
+                        <td>Tax</td>
+                        <td class="p-3">:</td>
+                        <td class="font-bold">10 %</td>
+                    </tr>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td class="p-3">:</td>
+                        <td class="font-bold">IDR 560.000</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td class="p-3">:</td>
+                        <td class="font-bold text-primary-variant">IDR 616.000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pl-16 flex justify-center flex-col gap-4">
+                <div class="w-96">
+                    <label for="evidence_transfer"
+                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bukti Transfer</label>
+                    <div class="flex items-center justify-center w-full">
+                        <label for="dropzone-file"
+                            class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+                            <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                                <svg aria-hidden="true" class="w-10 h-10 mb-3 text-gray-400" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12">
+                                    </path>
+                                </svg>
+                                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                        class="font-semibold">Click to upload</span>
+                                    or drag and drop</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">SVG, PNG, JPG or GIF (MAX.
+                                    800x400px)</p>
+                            </div>
+                            <input id="dropzone-file" type="file" class="hidden" />
+                        </label>
+                    </div>
+                </div>
+                <div class="w-96">
+                    <label for="bank" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Asal
+                        Bank</label>
+                    <select id="bank"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Pilih Bank</option>
+                        <option value="US">BCA</option>
+                        <option value="CA">BSI</option>
+                        <option value="FR">Bank Jago</option>
+                        <option value="DE">BRI</option>
+                    </select>
+                </div>
+                <div class="w-96">
+                    <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Bank</label>
+                    <input type="text" id="name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Nama Pengirim" required>
+                </div>
+            </div>
+
+        </div>
+        <div class="flex flex-col justify-center items-center">
+            <button type="submit" class="btn btn-primary"><a href="./booking-3.html">Continue to Book</a></button>
+            <button type="submit" class="btn btn-secondary w-[296px]">Cancel</button>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="logo">
+            <h1>Stay<span>cation.</span></h1>
+            <span>We serve sincerely and without limits</span>
+        </div>
+        <div class="menu">
+            <h3 class="menu-title">For Beginners</h3>
+            <ul class="menu-links">
+                <li><a href=""><span>New Account</span></a></li>
+                <li><a href=""><span>Payment Method</span></a></li>
+                <li><a href=""><span>Book Now</span></a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h3 class="menu-title">Explore Us</h3>
+            <ul class="menu-links">
+                <li><a href=""><span>About</span></a></li>
+                <li><a href=""><span>Privacy Policy</span></a></li>
+                <li><a href=""><span>Terms & Condition</span></a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h3 class="menu-title">Contact</h3>
+            <ul class="menu-links">
+                <li><a href=""><span>costumer@staycation.id</span></a></li>
+                <li><a href=""><span>021-87378913</span></a></li>
+                <li><a href=""><span>Sudirman, Central Jakarta, Indonesia</span></a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
